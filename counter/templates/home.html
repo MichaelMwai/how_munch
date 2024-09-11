@@ -13,16 +13,30 @@
     />
     <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
     <title>HOWMUNCH</title>
+
+    <style>
+      .youtube-video {
+        display: block; /* Initially hide the video */
+        margin-bottom: 20px;
+      }
+    </style>
+
   </head>
 
   <body>
       <div class="container">
-        {{api}}
         
           <div class="row justify-content-center">
               <div class="col-md-8 text-center">
-                  <img src="{% static 'images/logo.png' %}" class="img-responsive logo mb-5 mt-5" style="width: 400px; height: auto;" />
-                  <form method="POST">
+                    <a href="/">
+                    <img src="{% static 'images/logo.png' %}" class="img-responsive logo mb-5 mt-5" style="width: 400px; height: auto;" />
+                    </a>                  <h1>Welcome to HOWMUNCH</h1><br>
+                        <!-- YouTube Video Embed -->
+                        <div class="youtube-video" id="youtube-video">
+                            <iframe id="youtube-video-iframe" width="560" height="315" src="https://www.youtube.com/embed/VEQaH4LruUo?start=21" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                  
+                  <form id="search-form" method="POST">
                       {%csrf_token%}
                       <div class="input-group input-group-lg mb-5">
                         <input type="text" name="query" class="form-control inputstyle" placeholder="search for calories in your food..." required>
@@ -121,6 +135,10 @@
           </div>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
           <script>
+              // JavaScript to hide the video after the form is submitted
+             document.getElementById('search-form').addEventListener('submit', function(event) {
+                document.getElementById('youtube-video').style.display = 'none';
+            });
             const ctx = document.getElementById('myChart').getContext('2d');
             const myChart = new Chart(ctx, {
                 type: 'bar',
@@ -168,6 +186,7 @@
                     }
                 }
             });
+            
             </script>
   </body>
 </html>
