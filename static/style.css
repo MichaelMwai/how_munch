@@ -13,7 +13,7 @@ h1 {
 
 h1 strong {
   font-weight: 600;
-  color: #4b8673;
+  color: #eb2030;
 }
 
 .inputstyle {
@@ -21,8 +21,8 @@ h1 strong {
 }
 
 .whoop {
-  background-color: #5fd068;
-  width: 8em;
+  background-color: #eb2030;
+  width: 9em;
   font-size: 30px !important;
   color: #ffffff;
 }
@@ -44,14 +44,14 @@ h1 strong {
 }
 
 .caloriescont h3 {
-  color: #4b8673;
+  color: #eb2030;
   font-size: 2em;
   text-transform: capitalize;
   font-weight: 700;
 }
 
 .caloriescont h5 {
-  color: #4b8673;
+  color: #eb2030;
 }
 
 .servingsize {

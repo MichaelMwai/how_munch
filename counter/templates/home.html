@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
-    <title>Foodie Calorie Finder</title>
+    <title>HOWMUNCH</title>
   </head>
 
   <body>
@@ -21,7 +21,7 @@
         
           <div class="row justify-content-center">
               <div class="col-md-8 text-center">
-                  <img src="{% static 'images/logo.png' %}" class="img-responsive logo mb-5 mt-5" />
+                  <img src="{% static 'images/logo.png' %}" class="img-responsive logo mb-5 mt-5" style="width: 400px; height: auto;" />
                   <form method="POST">
                       {%csrf_token%}
                       <div class="input-group input-group-lg mb-5">
