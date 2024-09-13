@@ -1,64 +1,90 @@
-Calorie counting App
+Here’s your complete README.md in a single markdown block for easy copying:
 
+````markdown
 # HOWMUNCH
 
-## Overview
+## Introduction
 
-HOWMUNCH is a single-page web application built with Django and Python, designed to help users find the calorie content of various foods and visualize nutritional values. This application provides an interactive and user-friendly interface that fetches data from an external API and presents it in an engaging format.
+**HOWMUNCH** is a Django-based web application designed to help users calculate the calories burned from various exercises needed to offset the calorie intake from different foods. As a personal trainer and fitness coach, I developed this project to bridge the gap between food consumption and exercise, providing a practical tool for fitness enthusiasts and everyday users to make informed decisions about their diet and exercise routines.
 
-## Features
+**Deployed Site:** [HOWMUNCH Live](https://your-deployed-site-url.com)
 
-- **Calorie Finder**: Users can input the name of a food item to find its calorie content.
-- **Nutritional Information**: Detailed nutritional values including carbohydrates, cholesterol, saturated fat, sodium, sugar, and more.
-- **Visual Representation**: A bar chart generated using Chart.js to provide a pictorial view of nutritional values.
-- **Exercise Suggestions**: Provides information on how long various exercises (jogging, yoga, weightlifting, walking) are needed to burn the calories of the food item.
-- **Alerts and Icons**: Conditional alerts and icons for high sodium and sugar content.
+**Final Project Blog Article:** [HowMunch: Calorie Counting App](https://medium.com/@michaeldmwai/howmunch-calorie-counting-app-a23085bbaa2d)
 
-## Technology Stack
+**Author LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/michael-mwai-6b351216a/)
 
-- **Backend**: Django (Python)
-- **Frontend**: HTML, CSS, Bootstrap
-- **Charts**: Chart.js
-- **API**: API Ninjas for fetching nutritional data
+## Installation
 
-## Features in Detail
-
-- **User Interface**: The application features a clean and straightforward UI, utilizing Bootstrap for responsiveness and styling.
-- **Form Submission**: Users can search for calorie information by entering the food name in a form.
-- **Dynamic Content**: Nutritional information is displayed dynamically based on API responses, including conditional images and alerts.
-- **Charts Integration**: The application uses Chart.js to create a bar chart visualizing the nutritional values.
-
-## How It Works
-
-1. **User Input**: Enter the name of a food item in the search form.
-2. **API Call**: The app makes a POST request to the API Ninjas to fetch nutritional data.
-3. **Display Results**: The results are displayed on the page, including a chart and exercise suggestions based on the calorie content.
-4. **Conditional Alerts**: Alerts are shown for high sodium and sugar content.
-
-## Setup Instructions
-
-1. **Clone the Repository**:
+1. **Clone the repository:**
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/MichaelMwai/how_munch.git
+   cd howmunch
+   ```
+````
+
+2. **Set up a virtual environment:**
+
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows use `env\Scripts\activate`
    ```
 
-Install Dependencies:
+3. **Install dependencies:**
 
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Run Migrations:
-python manage.py migrate
+4. **Run migrations:**
 
-Start the Development Server:
-python manage.py runserver
+   ```bash
+   python manage.py migrate
+   ```
 
-Access the Application: Open your browser and go to http://localhost:8000 to start using HOWMUNCH.
+5. **Start the development server:**
+   ```bash
+   python manage.py runserver
+   ```
 
-## Learnings
+## Usage
 
-Throughout this project, you will gain hands-on experience with:
+1. Navigate to the homepage of the application.
+2. Enter the name of a food item to get its nutritional information.
+3. View the total calorie count and suggested exercises to burn off those calories.
+4. Use the charts and alerts to get additional insights into nutritional content.
 
-Making API calls and handling responses in Django.
-Utilizing Django templates for dynamic content rendering.
-Implementing JavaScript and Chart.js for data visualization.
-Creating a responsive and interactive single-page application.
+## Challenges
+
+- **Unforeseen Technical Challenges:** The API Ninjas made 'calories' and 'protein' premium features, making it impossible to calculate these values. We are considering switching to an alternative API or integrating additional resources in the future.
+- **Adaptation:** We adapted by focusing on available features and providing detailed nutritional information within the constraints.
+- **Unexpected Non-Technical Challenges:** Ensuring the accuracy and relevance of nutritional information due to frequent API changes.
+
+## Collaboration
+
+While I worked on this project independently, I received valuable feedback from peers and mentors, particularly in refining the user interface and improving API integration. Collaboration with fellow developers and fitness experts has helped enhance the project’s effectiveness and usability.
+
+## Project Updates
+
+- **API Changes:** We are exploring alternative APIs to replace the premium features previously offered by API Ninjas.
+- **Feature Enhancements:** Additional features, such as user accounts and personalized exercise recommendations, are planned for future updates.
+
+## Progress
+
+On a scale of 1 to 10, I would rate my progress this week as an 8. Progress is measured by completing key features and integrating feedback. The project is on track to meet the proposed deadline, with some minor adjustments planned based on the latest feedback and technical challenges.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request. You can also open an issue to discuss potential features or report bugs.
+
+## Related Projects
+
+- [Calorie Tracker](https://github.com/philipplackner/CalorieTracker.git) - A simple app for tracking daily calorie intake.
+- [Fitness Logger](https://github.com/PrajwalShenoy/fitnessLogger.git) - An application for logging and analyzing workout routines.
+
+## Licensing
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+```
+
+```
