@@ -1,8 +1,12 @@
 # HOWMUNCH
 
+![HOWMUNCH Screenshot](static/images/logo.png)
+
 ## Introduction
 
 **HOWMUNCH** is a Django-based web application designed to help users calculate the calories burned from various exercises needed to offset the calorie intake from different foods. As a personal trainer and fitness coach, I developed this project to bridge the gap between food consumption and exercise, providing a practical tool for fitness enthusiasts and everyday users to make informed decisions about their diet and exercise routines.
+
+![HOWMUNCH](static/images/HOWMUNCH_homepage.png)
 
 **Deployed Site:** [HOWMUNCH Live](https://your-deployed-site-url.com)
 
@@ -53,6 +57,11 @@
 ## Challenges
 
 - **Unforeseen Technical Challenges:** The API Ninjas made 'calories' and 'protein' premium features, making it impossible to calculate these values. We are considering switching to an alternative API or integrating additional resources in the future.
+
+![HOWMUNCH error](static/images/HOWMUNCH_errormain.png)
+
+![HOWMUNCH error](static/images/HOWMUNCH_errorful.png)
+
 - **Adaptation:** We adapted by focusing on available features and providing detailed nutritional information within the constraints.
 - **Unexpected Non-Technical Challenges:** Ensuring the accuracy and relevance of nutritional information due to frequent API changes.
 
