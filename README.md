@@ -1,6 +1,3 @@
-Here’s your complete README.md in a single markdown block for easy copying:
-
-````markdown
 # HOWMUNCH
 
 ## Introduction
@@ -20,6 +17,7 @@ Here’s your complete README.md in a single markdown block for easy copying:
    git clone https://github.com/MichaelMwai/how_munch.git
    cd howmunch
    ```
+
 ````
 
 2. **Set up a virtual environment:**
@@ -88,3 +86,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 
 ```
+````
